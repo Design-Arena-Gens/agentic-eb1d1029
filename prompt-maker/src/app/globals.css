@@ -1,0 +1,73 @@
+:root {
+  --app-bg: radial-gradient(circle at top left, #101633 0%, #070a19 45%, #05060d 100%);
+  --panel-bg: rgba(15, 20, 45, 0.9);
+  --panel-border: rgba(90, 110, 255, 0.25);
+  --card-bg: rgba(18, 24, 53, 0.9);
+  --card-border: rgba(90, 110, 255, 0.35);
+  --text-primary: #f7f9ff;
+  --text-secondary: rgba(242, 245, 255, 0.68);
+  --accent: #7f8cff;
+  --accent-strong: #a399ff;
+  --success: #39e29d;
+  --warning: #ffcf63;
+  --danger: #ff7b84;
+  --surface-blur: blur(24px);
+  --shadow-lg: 0 24px 70px -28px rgba(10, 15, 50, 0.65);
+  --radius-lg: 22px;
+  --radius-md: 16px;
+  --radius-sm: 12px;
+  --radius-xs: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: var(--app-bg);
+  color: var(--text-primary);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+::selection {
+  background: rgba(127, 140, 255, 0.35);
+  color: var(--text-primary);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(127, 140, 255, 0.35);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
